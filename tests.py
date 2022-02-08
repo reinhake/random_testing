@@ -26,7 +26,7 @@ class TestCase(unittest.TestCase):
 
     def test5(self):
         for i in range(0,100000):
-            val = random.randint(1000000000, 99999999999999999999)
+            val = random.randint(10000000000000, 99999999999999999)
             credit_card_validator(val)
 # 4528343118254528 bad checksum test 4
 # 7115125492487115 bad checksum test 4
