@@ -10,7 +10,7 @@ class TestCase(unittest.TestCase):
             credit_card_validator(val)
 
     def test2(self):
-        for i in range(0,100000):
+        for i in range(0,1000000):
             val = "5" + str(random.randint(10000000000000, 999999999999999))
             credit_card_validator(val)
 
@@ -30,10 +30,11 @@ class TestCase(unittest.TestCase):
             credit_card_validator(val)
 
     def test6(self):
-        for i in range(0,1000000):
+        for i in range(0,100000):
             val = random.randint(10000000000000, 99999999999999999)
             credit_card_validator(val)
 
+# 4052751135088950 good checksum test 2
 
 # 4528343118254528 bad checksum test 4
 # 7115125492487115 bad checksum test 4
