@@ -5,12 +5,12 @@ from credit_card_validator import credit_card_validator
 
 class TestCase(unittest.TestCase):
     def test1(self):
-        for i in range(0,100000):
+        for i in range(0,1000000):
             val = "4" + str(random.randint(10000000000000, 999999999999999))
             credit_card_validator(val)
 
     def test2(self):
-        for i in range(0,1000000):
+        for i in range(0,100000):
             val = "5" + str(random.randint(10000000000000, 999999999999999))
             credit_card_validator(val)
 
