@@ -11,12 +11,12 @@ class TestCase(unittest.TestCase):
 
     def test2(self):
         for i in range(0,1000):
-            val = "5" + str(random.randint(10000000000000, 999999999999999))
+            val = "5" + str(random.randint(100000000000000, 600000000000000))
             credit_card_validator(val)
 
     def test3(self):
         for i in range(0,1000):
-            val = "2" + str(random.randint(200000000000000, 8000000000000000))
+            val = "22" + str(random.randint(20000000000000, 800000000000000))
             credit_card_validator(val)
 
     def test4(self):
